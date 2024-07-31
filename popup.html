@@ -1,13 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile-Locker</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <h1>Lock your Profile!</h1>
-    <input type="text" placeholder="Enter Your Password here">
-    <button>UnLock</button>
+  <div id="popup-content">
+    <h2>Enter Password</h2>
+    <input type="password" id="password-input" placeholder="Password">
+    <button id="unlock-button">Unlock</button>
+    <div id="message"></div>
+  </div>
+  <script src="popup.js"></script>
 </body>
 </html>
