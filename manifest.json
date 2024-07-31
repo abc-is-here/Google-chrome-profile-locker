@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Profile Locker",
+  "version": "1.0",
+  "description": "Locks your Chrome profile with a password.",
+  "permissions": ["storage", "tabs", "activeTab", "scripting"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}
