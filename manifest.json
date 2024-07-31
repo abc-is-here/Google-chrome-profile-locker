@@ -3,7 +3,18 @@
   "name": "Profile Locker",
   "version": "1.0",
   "description": "Locks your Chrome profile with a password.",
-  "permissions": ["storage", "tabs", "activeTab", "scripting"],
+  "permissions": [
+    "storage",
+    "tabs",
+    "activeTab",
+    "scripting",
+    "https://*/*",
+    "http://*/*"
+  ],
+  "host_permissions": [
+    "https://*/*",
+    "http://*/*"
+  ],
   "action": {
     "default_popup": "popup.html"
   },
@@ -15,5 +26,10 @@
       "matches": ["<all_urls>"],
       "js": ["content.js"]
     }
-  ]
+  ],
+  "icons": {
+    "16": "prof.jpg",
+    "48": "prof.jpg",
+    "128": "prof.jpg"
+  }
 }

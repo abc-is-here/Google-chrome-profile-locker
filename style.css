@@ -1,52 +1,61 @@
-body{
-    border: 1px solid black;
-    text-align: center;
+#popup-content {
+  width: 300px;
+  padding: 20px;
 }
 
-#popup-content {
-    width: 200px;
-    padding: 20px;
-  }
-  
-  #password-input {
-    width: 90%;
-    padding: 8px;
-    margin-bottom: 10px;
-  }
-  
-  #unlock-button {
-    width: 100%;
-    padding: 8px;
-  }
-  
-  #profile-locker-overlay {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(255, 255, 255, 0.9);
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 9999;
-  }
-  
-  #profile-locker-overlay div {
-    text-align: center;
-  }
-  
-  #profile-locker-password {
-    padding: 8px;
-    margin-bottom: 10px;
-  }
-  
-  #profile-locker-unlock {
-    padding: 8px;
-  }
-  
-  #profile-locker-message {
-    margin-top: 10px;
-    color: red;
-  }
-  
+#current-password-input, #new-password-input, #password-input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+#unlock-button, #set-password-button {
+  width: 100%;
+  padding: 8px;
+}
+
+#profile-locker-overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+#profile-locker-overlay.fade-out {
+  opacity: 0;
+}
+
+#profile-locker-overlay div {
+  text-align: center;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+#profile-locker-password {
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+#profile-locker-unlock {
+  padding: 8px;
+}
+
+#profile-locker-message {
+  margin-top: 10px;
+  color: red;
+}
+
+body.profile-locker-blur {
+  filter: blur(5px);
+  transition: filter 0.3s ease;
+}
