@@ -11,3 +11,5 @@ To start with this, Here are the steps:
 7. Enjoy and stay Secure!!!
 
 (Note: The defualt password is "Admin", You can click on the extension icon and change the password to whatever you want, Also note that this might give some problems as this is in it's initial stages!)
+
+![image](https://github.com/user-attachments/assets/1fd54328-fbd8-4ac9-a5fd-425d110cde55)
